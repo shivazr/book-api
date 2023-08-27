@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Card from './Card'
 import axios from 'axios'
+import { InputGroup, Input, Button, FormGroup, Label } from 'reactstrap'
 
 const Main = () => {
     const [search, setSearch]=useState("");
@@ -18,8 +19,25 @@ const Main = () => {
     <>
       <div className="header">
         <div className="row1">
-            <h1>A room without books is like <br /> a body without a soul</h1>
+            {/* <h1>A room without books is like <br /> a body without a soul</h1> */}
+            {/* <div className="search">
+                <input type="text" placeholder='Enter Your Book Name'
+                value={search} 
+                onChange={e=>setSearch(e.target.value)}
+                onKeyPress={searchBook} />
+                <button><i className="fa fa-search"></i></button>
+            </div> */}
+            {/* <InputGroup size="lg" >
+            <Input placeholder='Book Search' 
+             value={search} 
+             onChange={e=>setSearch(e.target.value)}
+            />
+            <Button color="success" >
+              <i className="fa fa-search"></i>
+            </Button>
+          </InputGroup> */}
         </div>
+
         <div className="row2">
             <h2>Find Your Book</h2>
             <div className="search">
@@ -29,7 +47,7 @@ const Main = () => {
                 onKeyPress={searchBook} />
                 <button><i className="fa fa-search"></i></button>
             </div>
-            <img src="https://img.freepik.com/free-vector/world-book-day-illustration_23-2149323889.jpg?t=st=1666163300~exp=1666163900~hmac=fc39029a6e4f9b9544546fade86182d322dc07c070d933d9feb3eebdd1743867" alt="" />
+            {/* <img src="https://img.freepik.com/free-vector/world-book-day-illustration_23-2149323889.jpg?t=st=1666163300~exp=1666163900~hmac=fc39029a6e4f9b9544546fade86182d322dc07c070d933d9feb3eebdd1743867" alt="" />  */}
         </div>
       </div>
       <div className="container">
